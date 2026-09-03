@@ -3,11 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>churnpit - Know who's about to churn</title>
+<title>ChurnPit — Customer Retention Software</title>
+<meta name="description" content="Get a health score for every customer, connect Stripe and usage data in minutes, and see who's at risk by email without logging in.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ChurnPit — Customer Retention Software">
+<meta name="twitter:description" content="Get a health score for every customer, connect Stripe and usage data in minutes.">
+<meta name="twittee:image" content="#">
+<meta property="og:title" content="ChurnPit — Customer Retention Software">
+<meta property="og:description" content="Get a health score for every customer, connect Stripe and usage data in minutes, and see who's at risk by email without logging in.">
+<meta property="og:image" content="#">
+<meta property="og:url" content="#">
+<meta property="og:type" content="website">
+<link rel="canonical" href="#">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/png" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "[PRODUCT_NAME]",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Customer health scoring and churn alert software for B2B SaaS teams.",
+  "offers": {
+    "@type": "Offer",
+    "price": "19.50",
+    "priceCurrency": "USD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "12"
+  }
+}
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q48PZYYGZG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q48PZYYGZG');
+</script>
+
 </head>
 <body>
 
@@ -111,10 +156,10 @@
 
       <article class="feature">
         <div class="feature-copy">
-          <span class="feature-tag">Health score</span>
-          <h2>One score. Easy decision.</h2>
+          <span class="feature-tag">Customer Health Score</span>
+          <h2>Customer Health Score &amp; Account Health Tracking</h2>
           <p class="problem">It's hard to know who's about to leave until it's too late.</p>
-          <p class="solution">The score comes from real signals, login gaps, failed payments, and more. One number tells you who to check on first.</p>
+          <p class="solution">Keepwell's customer health score comes from real signals, login gaps, failed payments, and more. Account health tracking gives you one number that tells you who to check on first.</p>
         </div>
         <div class="feature-visual">
           <div class="mock-card mock-score">
@@ -141,10 +186,42 @@
 
       <article class="feature feature-reverse">
         <div class="feature-copy">
+          <span class="feature-tag">Failed Payment Tracking</span>
+          <h2>Failed Payment Tracking</h2>
+          <p class="problem">A declined card is often the first sign a customer is about to leave, but most teams don't notice until the account has already cancelled.</p>
+          <p class="solution">Keepwell's failed payment tracking watches every charge automatically and folds it straight into the customer's health score, so billing trouble shows up before it turns into a cancellation.</p>
+        </div>
+        <div class="feature-visual">
+          <div class="mock-card mock-score">
+            <div class="mock-score-row">
+              <span class="mock-name">Fenwick &amp; Co</span>
+              <span class="mock-badge mock-badge-risk">Payment failed</span>
+            </div>
+            <div class="mock-score-row muted">
+              <span>Card declined</span><span>2 days ago</span>
+            </div>
+            <div class="mock-score-row muted">
+              <span>Retry attempts</span><span>2 of 3</span>
+            </div>
+            <div class="mock-score-row muted">
+              <span>Health score impact</span><span>-18 pts</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-copy">
           <span class="feature-tag">Own SMTP</span>
-          <h2>No alert gets ignored</h2>
+          <h2>Send Mail From Your Domain</h2>
           <p class="problem">One email is easy to miss. Nothing happens, and the customer quietly leaves.</p>
-          <p class="solution">If a customer's score drops below 70, Keepwell emails them from your own domain, with your permission. No response? Your team gets notified to step in.</p>
+          <ol class="solution-steps">
+            <li>Customer's health score drops below 70</li>
+            <li>Keepwell sends an email from your own domain</li>
+            <li>They come back? Nothing else happens</li>
+            <li>No response? Keepwell sends a second email, also from your domain</li>
+            <li>Still no response? Your team gets notified to step in</li>
+          </ol>
         </div>
         <div class="feature-visual">
           <div class="mock-card mock-smtp">
@@ -164,7 +241,7 @@
         </div>
       </article>
 
-      <article class="feature">
+      <article class="feature feature-reverse">
         <div class="feature-copy">
           <span class="feature-tag">Reporting</span>
           <h2>Straight to your inbox</h2>
