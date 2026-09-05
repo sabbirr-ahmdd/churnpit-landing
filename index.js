@@ -79,3 +79,70 @@ waitlistForm.addEventListener("submit", async (e) => {
         waitlistBtn.textContent = waitlistBtnText;
     }
 });
+
+
+(function () {
+  document.documentElement.classList.add('js-ready');
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- section registry (id -> element, dark?) ---------- */
+  var sectionEls = [
+    { id: 'hero', dark: true },
+    { id: 'feature-health', dark: false },
+    { id: 'feature-payments', dark: false },
+    { id: 'feature-smtp', dark: false },
+    { id: 'feature-reporting', dark: false },
+    { id: 'how-it-works', dark: false },
+    { id: 'pricing', dark: false },
+    { id: 'request', dark: true },
+    { id: 'cta', dark: true }
+  ].map(function (s) {
+    s.el = document.getElementById(s.id);
+    return s;
+  }).filter(function (s) { return s.el; });
+
+  var dotsNav = document.querySelector('.section-dots');
+  var dotLinks = dotsNav ? Array.prototype.slice.call(dotsNav.querySelectorAll('[data-dot]')) : [];
+
+  function setActiveSection(id, dark) {
+    dotLinks.forEach(function (a) {
+      a.classList.toggle('active', a.getAttribute('data-section') === id);
+    });
+    if (dotsNav) dotsNav.classList.toggle('on-dark', !!dark);
+  }
+
+  if ('IntersectionObserver' in window && sectionEls.length) {
+    var current = sectionEls[0].id;
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          var match = sectionEls.filter(function (s) { return s.el === entry.target; })[0];
+          if (match) {
+            current = match.id;
+            setActiveSection(match.id, match.dark);
+          }
+        }
+      });
+    }, { threshold: [0.5] });
+
+    sectionEls.forEach(function (s) { spy.observe(s.el); });
+    setActiveSection(current, sectionEls[0].dark);
+  }
+
+  /* ---------- reveal on scroll ---------- */
+  var revealTargets = document.querySelectorAll('.feature-grid, .price-card, .request-card, .steps-list li');
+  if ('IntersectionObserver' in window && revealTargets.length && !reduceMotion) {
+    var reveal = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          reveal.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    revealTargets.forEach(function (el) { reveal.observe(el); });
+  } else {
+    revealTargets.forEach(function (el) { el.classList.add('in-view'); });
+  }
+})();

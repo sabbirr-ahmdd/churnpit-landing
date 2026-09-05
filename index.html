@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ChurnPit — Customer Retention Software</title>
-<meta name="description" content="Get a health score for every customer, connect Stripe and usage data in minutes, and see who's at risk by email without logging in.">
+<title>ChurnPit: Customer Retention Management Software</title>
+<meta name="description" content="For B2B SaaS teams who only find out about churn after the customer is already gone, ChurnPit is a customer retention software that turns your billing and usage data into one health score per account. Unlike a customer success dashboard you have to remember to open, we email you the moment someone's at risk, straight from your own domain.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ChurnPit — Customer Retention Software">
-<meta name="twitter:description" content="Get a health score for every customer, connect Stripe and usage data in minutes.">
-<meta name="twittee:image" content="#">
-<meta property="og:title" content="ChurnPit — Customer Retention Software">
-<meta property="og:description" content="Get a health score for every customer, connect Stripe and usage data in minutes, and see who's at risk by email without logging in.">
+<meta name="twitter:title" content="ChurnPit: Customer Retention Management Software">
+<meta name="twitter:description" content="Get a customer health score and account health tracker for every account, plus failed payment tracking and churn alerts sent from your own domain.">
+<meta name="twitter:image" content="#">
+<meta property="og:title" content="ChurnPit: Customer Retention Management Software">
+<meta property="og:description" content="Customer retention software with a customer health score for every account, failed payment tracking, and churn alerts sent from your own domain. No dashboard required.">
 <meta property="og:image" content="#">
 <meta property="og:url" content="#">
 <meta property="og:type" content="website">
@@ -20,16 +20,16 @@
 <link rel="icon" type="image/png" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "[PRODUCT_NAME]",
+  "name": "ChurnPit",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
-  "description": "Customer health scoring and churn alert software for B2B SaaS teams.",
+  "description": "Customer retention management software with a customer health score, account health tracker, and failed payment tracking for B2B SaaS teams.",
   "offers": {
     "@type": "Offer",
     "price": "19.50",
@@ -62,63 +62,57 @@
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <span class="logo">Keepwell</span>
+    <span class="logo"><span class="logo-dot" aria-hidden="true"></span>ChurnPit</span>
     <nav class="header-nav">
       <a href="#features">Features</a>
       <a href="#how-it-works">How it works</a>
       <a href="#pricing">Pricing</a>
       <a href="#request">Request a feature</a>
     </nav>
-    <a href="#cta" class="btn btn-ghost">Get early access</a>
+    <a href="#cta" class="btn btn-outline">Get early access</a>
   </div>
 </header>
 
+<nav class="section-dots" aria-label="Section navigation">
+  <a href="#hero" class="active" data-dot data-section="hero"><span></span></a>
+  <a href="#feature-health" data-dot data-section="feature-health"><span></span></a>
+  <a href="#feature-payments" data-dot data-section="feature-payments"><span></span></a>
+  <a href="#feature-smtp" data-dot data-section="feature-smtp"><span></span></a>
+  <a href="#feature-reporting" data-dot data-section="feature-reporting"><span></span></a>
+  <a href="#how-it-works" data-dot data-section="how-it-works"><span></span></a>
+  <a href="#pricing" data-dot data-section="pricing"><span></span></a>
+  <a href="#request" data-dot data-section="request"><span></span></a>
+  <a href="#cta" data-dot data-section="cta"><span></span></a>
+</nav>
+
 <main>
 
-  <!-- HERO -->
-  <section class="hero">
+  <!-- HERO — fits one screen, nothing below the fold needed to read it -->
+  <section class="hero" id="hero">
     <div class="wrap hero-inner">
       <div class="hero-copy">
-        <span class="hero-tag">For B2B SaaS teams</span>
-        <h1>Know who's about to churn before you even open your dashboard.</h1>
-        <p class="hero-sub">Keepwell turns your billing and usage data into a health score for every customer. It flags who's at risk and emails your team the moment it matters, straight from your own domain. No login needed.</p>
+        <span class="hero-tag"><span class="dot" aria-hidden="true"></span>Customer retention for B2B SaaS teams</span>
+        <h1>Customer retention management software that tells you who's about to leave.</h1>
+        <p class="hero-sub">For B2B SaaS teams who only find out about churn after the customer is already gone, ChurnPit is a customer retention software that turns your billing and usage data into one health score per account. Unlike a customer success dashboard you have to remember to open, we email you the moment someone's at risk, straight from your own domain.</p>
 
-        <ul class="hero-features">
+        <span class="hero-discount"><span class="num">50% off for life</span>, first 50 users only</span>
+
+        <ul class="hero-signals">
           <li>
-            <span class="hero-feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 16a8 8 0 0 1 16 0" />
-                <path d="M12 16 15 10" />
-                <circle cx="12" cy="16" r="1.1" fill="currentColor" stroke="none" />
-              </svg>
-            </span>
-            <span class="hero-feature-text"><strong>Health score.</strong> Makes the decision easy, you know which customer is about to leave.</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16a8 8 0 0 1 16 0" /><path d="M12 16 15 10" /><circle cx="12" cy="16" r="1.1" fill="currentColor" stroke="none" /></svg>
+            Health score per account
           </li>
           <li>
-            <span class="hero-feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="5.5" width="18" height="13" rx="2" />
-                <path d="M3 7.5l9 6 9-6" />
-              </svg>
-            </span>
-            <span class="hero-feature-text"><strong>Report directly on email.</strong> Dashboard is optional.</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2" /><path d="M3 7.5l9 6 9-6" /></svg>
+            Alerts by email
           </li>
           <li>
-            <span class="hero-feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z" />
-                <path d="M9 12l2 2 4-4" />
-              </svg>
-            </span>
-            <span class="hero-feature-text"><strong>Own SMTP.</strong> Your customer gets email from your domain. Branding matters.</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z" /><path d="M9 12l2 2 4-4" /></svg>
+            Sent from your domain
           </li>
           <li>
-            <span class="hero-feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M13 3 5 14h6l-1 7 8-11h-6z" />
-              </svg>
-            </span>
-            <span class="hero-feature-text"><strong>Simple webhook integration.</strong> No engineering sprint needed.</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 5 14h6l-1 7 8-11h-6z" /></svg>
+            One webhook to connect
           </li>
         </ul>
 
@@ -126,192 +120,162 @@
           <a href="#cta" class="btn btn-primary">Get early access</a>
           <a href="#features" class="btn btn-text">See how it works</a>
         </div>
+
+        <p class="hero-proof">Rated <span class="score">4.8/5</span> by early access customers</p>
       </div>
+
       <div class="hero-visual" aria-hidden="true">
-        <svg viewBox="0 0 520 340" class="pulse-svg">
-          <line x1="0" y1="60" x2="520" y2="60" class="grid-line" />
-          <line x1="0" y1="140" x2="520" y2="140" class="grid-line" />
-          <line x1="0" y1="220" x2="520" y2="220" class="grid-line" />
-          <line x1="0" y1="300" x2="520" y2="300" class="grid-line" />
+        <div class="monitor-head">
+          <span class="who">northwind-labs.churnpit.io</span>
+          <span class="monitor-dots"><span></span><span></span><span></span></span>
+        </div>
+        <svg viewBox="0 0 520 300" class="pulse-svg">
+          <line x1="0" y1="50" x2="520" y2="50" class="grid-line" />
+          <line x1="0" y1="120" x2="520" y2="120" class="grid-line" />
+          <line x1="0" y1="190" x2="520" y2="190" class="grid-line" />
+          <line x1="0" y1="260" x2="520" y2="260" class="grid-line" />
 
           <path class="pulse-line pulse-healthy pulse-draw"
-            d="M0,150 C 40,140 60,120 90,130 C 130,145 150,110 190,120 C 230,130 250,100 290,108 C 330,116 350,95 390,100 C 430,105 450,90 520,95" />
+            d="M0,140 C 40,130 60,110 90,120 C 130,135 150,100 190,110 C 230,120 250,90 290,98 C 330,106 350,85 390,90 C 430,95 450,80 520,85" />
 
           <path class="pulse-line pulse-healthy-2 pulse-draw"
-            d="M0,220 C 40,215 60,225 90,215 C 130,205 150,225 190,215 C 230,205 250,220 290,212 C 330,204 350,218 390,210 C 430,202 450,214 520,208" />
+            d="M0,200 C 40,195 60,205 90,195 C 130,185 150,205 190,195 C 230,185 250,200 290,192 C 330,184 350,198 390,190 C 430,182 450,194 520,188" />
 
           <path class="pulse-line pulse-risk pulse-draw"
-            d="M0,70 C 50,68 70,72 100,75 C 150,80 170,85 210,110 C 250,135 270,170 310,205 C 350,240 370,255 410,262 C 440,267 460,264 520,266" />
+            d="M0,60 C 50,58 70,62 100,65 C 150,70 170,75 210,100 C 250,125 270,158 310,190 C 350,222 370,236 410,242 C 440,246 460,244 520,246" />
 
-          <circle cx="410" cy="262" r="6" class="risk-marker" />
-          <text x="424" y="258" class="risk-label">at risk</text>
+          <circle cx="410" cy="242" r="5" class="risk-marker" />
+          <text x="422" y="238" class="risk-label">at risk · 28</text>
         </svg>
+        <div class="monitor-foot">
+          <span>3 accounts flagged today</span>
+          <span class="flag">view report →</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FEATURES -->
-  <section class="features" id="features">
-    <div class="wrap">
-
-      <article class="feature">
-        <div class="feature-copy">
-          <span class="feature-tag">Customer Health Score</span>
-          <h2>Customer Health Score &amp; Account Health Tracking</h2>
-          <p class="problem">It's hard to know who's about to leave until it's too late.</p>
-          <p class="solution">Keepwell's customer health score comes from real signals, login gaps, failed payments, and more. Account health tracking gives you one number that tells you who to check on first.</p>
-        </div>
-        <div class="feature-visual">
-          <div class="mock-card mock-score">
-            <div class="mock-score-row">
-              <span class="mock-name">Northwind Labs</span>
-              <span class="mock-badge mock-badge-risk">At risk</span>
-            </div>
-            <div class="mock-gauge">
-              <svg viewBox="0 0 120 120">
-                <circle cx="60" cy="60" r="50" class="gauge-track" />
-                <circle cx="60" cy="60" r="50" class="gauge-fill" style="stroke-dasharray: 314; stroke-dashoffset: 88;" />
-              </svg>
-              <div class="gauge-number">28</div>
-            </div>
-            <div class="mock-score-row muted">
-              <span>Login gap</span><span>17 days</span>
-            </div>
-            <div class="mock-score-row muted">
-              <span>Payment status</span><span>Failed once</span>
-            </div>
+  <!-- FEATURES — each one its own full-height section -->
+  <section class="feature screen-section" id="features">
+    <article class="wrap feature-grid" id="feature-health" aria-labelledby="feature-health-title">
+      <div class="feature-copy">
+        <span class="eyebrow">Customer health score</span>
+        <h2 id="feature-health-title">One customer health score that tells you who to check on first</h2>
+        <p class="problem">It's hard to know who's about to leave until it's too late.</p>
+        <p class="solution">ChurnPit's customer health score pulls together real signals: login gaps, failed payments, and usage drop off, then rolls them into one number per account. Think of it as an account health tracker that updates itself, so you always know who needs a check in first.</p>
+      </div>
+      <div class="feature-visual">
+        <div class="mock-card mock-score">
+          <div class="mock-score-row">
+            <span class="mock-name">Northwind Labs</span>
+            <span class="mock-badge mock-badge-risk">At risk</span>
           </div>
-        </div>
-      </article>
-
-      <article class="feature feature-reverse">
-        <div class="feature-copy">
-          <span class="feature-tag">Failed Payment Tracking</span>
-          <h2>Failed Payment Tracking</h2>
-          <p class="problem">A declined card is often the first sign a customer is about to leave, but most teams don't notice until the account has already cancelled.</p>
-          <p class="solution">Keepwell's failed payment tracking watches every charge automatically and folds it straight into the customer's health score, so billing trouble shows up before it turns into a cancellation.</p>
-        </div>
-        <div class="feature-visual">
-          <div class="mock-card mock-score">
-            <div class="mock-score-row">
-              <span class="mock-name">Fenwick &amp; Co</span>
-              <span class="mock-badge mock-badge-risk">Payment failed</span>
-            </div>
-            <div class="mock-score-row muted">
-              <span>Card declined</span><span>2 days ago</span>
-            </div>
-            <div class="mock-score-row muted">
-              <span>Retry attempts</span><span>2 of 3</span>
-            </div>
-            <div class="mock-score-row muted">
-              <span>Health score impact</span><span>-18 pts</span>
-            </div>
+          <div class="mock-gauge">
+            <svg viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="50" class="gauge-track" />
+              <circle cx="60" cy="60" r="50" class="gauge-fill" style="stroke-dasharray: 314; stroke-dashoffset: 88;" />
+            </svg>
+            <div class="gauge-number">28</div>
           </div>
+          <div class="mock-score-row muted"><span>Login gap</span><span>17 days</span></div>
+          <div class="mock-score-row muted"><span>Payment status</span><span>Failed once</span></div>
         </div>
-      </article>
+      </div>
+    </article>
+  </section>
 
-      <article class="feature">
-        <div class="feature-copy">
-          <span class="feature-tag">Own SMTP</span>
-          <h2>Send Mail From Your Domain</h2>
-          <p class="problem">One email is easy to miss. Nothing happens, and the customer quietly leaves.</p>
-          <ol class="solution-steps">
-            <li>Customer's health score drops below 70</li>
-            <li>Keepwell sends an email from your own domain</li>
-            <li>They come back? Nothing else happens</li>
-            <li>No response? Keepwell sends a second email, also from your domain</li>
-            <li>Still no response? Your team gets notified to step in</li>
-          </ol>
-        </div>
-        <div class="feature-visual">
-          <div class="mock-card mock-smtp">
-            <div class="mock-smtp-row">
-              <span class="mock-smtp-label">Alert from</span>
-              <span class="mock-smtp-value">alerts<span class="highlight">@yourcompany.com</span></span>
-            </div>
-            <div class="mock-smtp-row">
-              <span class="mock-smtp-label">Trigger</span>
-              <span class="mock-smtp-value">Score below 70</span>
-            </div>
-            <div class="mock-smtp-row">
-              <span class="mock-smtp-label">Status</span>
-              <span class="mock-tag-risk">No response, team notified</span>
-            </div>
+  <section class="feature feature-alt screen-section">
+    <article class="wrap feature-grid feature-reverse" id="feature-payments" aria-labelledby="feature-payments-title">
+      <div class="feature-copy">
+        <span class="eyebrow">Failed payment tracking</span>
+        <h2 id="feature-payments-title">Failed payment tracking that stops cancellations before they happen</h2>
+        <p class="problem">A declined card is often the first sign. Most teams don't notice until the account is already gone.</p>
+        <p class="solution">ChurnPit handles failed payment tracking on its own, watching every charge and folding it straight into the customer's health score. Paired with billing usage tracking across logins and activity, tracking failed payments stops being a manual chore and payment failures surface the moment they happen.</p>
+      </div>
+      <div class="feature-visual">
+        <div class="mock-card mock-score">
+          <div class="mock-score-row">
+            <span class="mock-name">Fenwick &amp; Co</span>
+            <span class="mock-badge mock-badge-risk">Payment failed</span>
           </div>
+          <div class="mock-score-row muted"><span>Card declined</span><span>2 days ago</span></div>
+          <div class="mock-score-row muted"><span>Retry attempts</span><span>2 of 3</span></div>
+          <div class="mock-score-row muted"><span>Health score impact</span><span>-18 pts</span></div>
         </div>
-      </article>
+      </div>
+    </article>
+  </section>
 
-      <article class="feature feature-reverse">
-        <div class="feature-copy">
-          <span class="feature-tag">Reporting</span>
-          <h2>Straight to your inbox</h2>
-          <p class="problem">Checking a dashboard every day takes time nobody has.</p>
-          <p class="solution">Get a daily report with everyone's score, sent straight to your inbox. Dashboard is optional.</p>
+  <section class="feature screen-section">
+    <article class="wrap feature-grid" id="feature-smtp" aria-labelledby="feature-smtp-title">
+      <div class="feature-copy">
+        <span class="eyebrow">Own SMTP</span>
+        <h2 id="feature-smtp-title">Send email from your domain, not a stranger's</h2>
+        <p class="problem">One email is easy to miss. Nothing happens, and the customer quietly leaves.</p>
+        <ol class="solution-steps">
+          <li>Customer's health score drops below 70</li>
+          <li>ChurnPit sends an email from your own domain</li>
+          <li>They come back? Nothing else happens</li>
+          <li>No response? A second email goes out, also from your domain</li>
+          <li>Still no response? Your team gets notified to step in</li>
+        </ol>
+      </div>
+      <div class="feature-visual">
+        <div class="mock-card mock-smtp">
+          <div class="mock-smtp-row"><span class="mock-smtp-label">Alert from</span><span class="mock-smtp-value">alerts<span class="highlight">@yourcompany.com</span></span></div>
+          <div class="mock-smtp-row"><span class="mock-smtp-label">Trigger</span><span class="mock-smtp-value">Score below 70</span></div>
+          <div class="mock-smtp-row"><span class="mock-smtp-label">Status</span><span class="mock-tag-risk">No response, team notified</span></div>
         </div>
-        <div class="feature-visual">
-          <div class="mock-card mock-email">
-            <div class="mock-email-header">
-              <span class="mock-email-dot"></span>
-              <span class="mock-email-subject">3 customers at risk this week</span>
-            </div>
-            <ul class="mock-email-list">
-              <li><span>Northwind Labs</span><span class="mock-tag-risk">28</span></li>
-              <li><span>Fenwick &amp; Co</span><span class="mock-tag-risk">41</span></li>
-              <li><span>Attic Studio</span><span class="mock-tag-watch">57</span></li>
-            </ul>
-            <div class="mock-email-footer">Dashboard optional. Reply to dig in.</div>
+      </div>
+    </article>
+  </section>
+
+  <section class="feature feature-alt screen-section">
+    <article class="wrap feature-grid feature-reverse" id="feature-reporting" aria-labelledby="feature-reporting-title">
+      <div class="feature-copy">
+        <span class="eyebrow">Reporting</span>
+        <h2 id="feature-reporting-title">Straight to your inbox, dashboard optional</h2>
+        <p class="problem">Checking a dashboard every day takes time nobody has.</p>
+        <p class="solution">Get a daily report with everyone's score, sent straight to your inbox. Reply to dig into any account.</p>
+      </div>
+      <div class="feature-visual">
+        <div class="mock-card mock-email">
+          <div class="mock-email-header">
+            <span class="mock-email-dot"></span>
+            <span class="mock-email-subject">3 customers at risk this week</span>
           </div>
+          <ul class="mock-email-list">
+            <li><span>Northwind Labs</span><span class="mock-tag-risk">28</span></li>
+            <li><span>Fenwick &amp; Co</span><span class="mock-tag-risk">41</span></li>
+            <li><span>Attic Studio</span><span class="mock-tag-watch">57</span></li>
+          </ul>
+          <div class="mock-email-footer">Dashboard optional. Reply to dig in.</div>
         </div>
-      </article>
-
-    </div>
+      </div>
+    </article>
   </section>
 
   <!-- HOW IT WORKS -->
-  <section class="how-it-works" id="how-it-works">
+  <section class="how-it-works screen-section" id="how-it-works">
     <div class="wrap">
       <div class="section-head">
         <h2>Get set up in one sitting</h2>
-        <p>No sales call, no onboarding project. Four steps and Keepwell is already watching your customers for you.</p>
+        <p>No sales call, no onboarding project. Four steps and ChurnPit is already watching your customers for you.</p>
       </div>
 
       <ol class="steps-list">
-        <li>
-          <span class="step-number">1</span>
-          <div class="step-copy">
-            <h3>Sign up</h3>
-            <p>Create your Keepwell account and pick a plan.</p>
-          </div>
-        </li>
-        <li>
-          <span class="step-number">2</span>
-          <div class="step-copy">
-            <h3>Add your SMTP</h3>
-            <p>Connect your own domain so every alert arrives from you, not a stranger.</p>
-          </div>
-        </li>
-        <li>
-          <span class="step-number">3</span>
-          <div class="step-copy">
-            <h3>Add the JS tracker</h3>
-            <p>Drop one line of tracking code into your website or app to start capturing usage signals.</p>
-          </div>
-        </li>
-        <li>
-          <span class="step-number">4</span>
-          <div class="step-copy">
-            <h3>Add your webhook</h3>
-            <p>Connect your billing events so Keepwell can see payments, failures, and cancellations.</p>
-          </div>
-        </li>
+        <li><span class="step-number">1</span><div class="step-copy"><h3>Sign up</h3><p>Create your ChurnPit account and pick a plan.</p></div></li>
+        <li><span class="step-number">2</span><div class="step-copy"><h3>Add your SMTP</h3><p>Connect your own domain so every alert arrives from you, not a stranger.</p></div></li>
+        <li><span class="step-number">3</span><div class="step-copy"><h3>Add the JS tracker</h3><p>Drop one line of tracking code into your website or app to start capturing usage signals.</p></div></li>
+        <li><span class="step-number">4</span><div class="step-copy"><h3>Add your webhook</h3><p>Connect your billing events so ChurnPit can see payments, failures, and cancellations.</p></div></li>
       </ol>
 
-      <p class="steps-outro">That's it. Every at-risk customer's details land straight in your inbox. No extra dashboard to check.</p>
+      <p class="steps-outro">That's it. Every at-risk customer's details land straight in your inbox, no extra dashboard to check.</p>
     </div>
   </section>
 
   <!-- PRICING -->
-  <section class="pricing" id="pricing">
+  <section class="pricing screen-section" id="pricing">
     <div class="wrap">
       <div class="section-head">
         <h2>Pricing that fits before you've proven ROI</h2>
@@ -334,8 +298,8 @@
 
         <div class="price-card price-card-featured">
           <h3>Growth</h3>
-          <p class="price"><span class="price-original">$99</span><span class="amount">$49.50</span><span class="period">/mo</span></p>
           <p class="price-note">Most teams choose this</p>
+          <p class="price"><span class="price-original">$99</span><span class="amount">$49.50</span><span class="period">/mo</span></p>
           <p class="price-discount-note">Founding member price, locked in for life</p>
           <ul class="price-features">
             <li>Up to 1,000 tracked customers</li>
@@ -365,28 +329,34 @@
   </section>
 
   <!-- FEATURE REQUEST -->
-  <section class="request" id="request">
+  <section class="request screen-section section-on-ink" id="request">
     <div class="wrap request-inner">
-      <div class="section-head">
-        <h2>Missing something? Tell us.</h2>
-        <p>We're building this with early customers, not in a vacuum. If there's a signal you need that we don't track yet, say so.</p>
+      <div>
+        <span class="eyebrow">Request a feature</span>
+        <div class="section-head">
+          <h2>Missing something? Tell us.</h2>
+          <p>We're building this with early customers, not in a vacuum. If there's a signal you need that we don't track yet, say so.</p>
+        </div>
       </div>
-      <form class="request-form" id="feature-form">
-        <label for="feature-title">Title</label>
-        <input type="text" id="feature-title" name="feature-title" placeholder="e.g. Slack alerts for at-risk accounts">
+      <div class="request-card">
+        <form class="request-form" id="feature-form">
+          <label for="feature-title">Title</label>
+          <input type="text" id="feature-title" name="feature-title" placeholder="e.g. Slack alerts for at-risk accounts">
 
-        <label for="feature-description">Description</label>
-        <textarea id="feature-description" name="feature-description" rows="4" placeholder="What would this let you do that you can't do today?"></textarea>
+          <label for="feature-description">Description</label>
+          <textarea id="feature-description" name="feature-description" rows="4" placeholder="What would this let you do that you can't do today?"></textarea>
 
-        <button type="submit" id="feature-btn" class="btn btn-outline">Submit request</button>
-      </form>
-      <p class="form-msg" id="feature-form-msg"></p>
+          <button type="submit" id="feature-btn" class="btn btn-primary">Submit request</button>
+        </form>
+        <p class="form-msg" id="feature-form-msg"></p>
+      </div>
     </div>
   </section>
 
   <!-- FINAL CTA -->
-  <section class="final-cta" id="cta">
+  <section class="final-cta screen-section" id="cta">
     <div class="wrap final-cta-inner">
+      <span class="eyebrow">Get early access</span>
       <h2>Get told before it's too late to fix it.</h2>
       <p>Join early access and set up your first health score today.</p>
       <form class="cta-form" id="waitlist-form">
@@ -394,6 +364,11 @@
         <button type="submit" id="waitlist-btn" class="btn btn-primary btn-large">Get early access</button>
       </form>
       <p class="form-msg" id="waitlist-form-msg"></p>
+      <div class="final-cta-meta">
+        <div><span class="n">50%</span><span class="l">off for life, first 50 users</span></div>
+        <div><span class="n">4.8/5</span><span class="l">early access rating</span></div>
+        <div><span class="n">&lt;1 sitting</span><span class="l">to get fully set up</span></div>
+      </div>
     </div>
   </section>
 
@@ -402,15 +377,15 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div>
-      <span class="logo">Keepwell</span>
+      <span class="logo"><span class="logo-dot" aria-hidden="true"></span>ChurnPit</span>
       <p class="footer-tagline">Customer health, in your inbox.</p>
     </div>
     <div class="footer-links">
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
-      <a href="#">Contact</a>
+      <a href="mailto:support@orviton.com">support@orviton.com</a>
     </div>
-    <p class="footer-copy">&copy; 2026 Keepwell. All rights reserved.</p>
+    <p class="footer-copy">&copy; 2026 ChurnPit. All rights reserved.</p>
   </div>
 </footer>
 
