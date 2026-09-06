@@ -126,30 +126,45 @@
 
       <div class="hero-visual" aria-hidden="true">
         <div class="monitor-head">
-          <span class="who">northwind-labs.churnpit.io</span>
+          <span class="who">churnpit.orviton.com/customers</span>
           <span class="monitor-dots"><span></span><span></span><span></span></span>
         </div>
-        <svg viewBox="0 0 520 300" class="pulse-svg">
-          <line x1="0" y1="50" x2="520" y2="50" class="grid-line" />
-          <line x1="0" y1="120" x2="520" y2="120" class="grid-line" />
-          <line x1="0" y1="190" x2="520" y2="190" class="grid-line" />
-          <line x1="0" y1="260" x2="520" y2="260" class="grid-line" />
 
-          <path class="pulse-line pulse-healthy pulse-draw"
-            d="M0,140 C 40,130 60,110 90,120 C 130,135 150,100 190,110 C 230,120 250,90 290,98 C 330,106 350,85 390,90 C 430,95 450,80 520,85" />
+        <div class="dash-header">
+          <span>Customer health</span>
+          <span class="dash-live"><span class="dash-live-dot"></span>Updated 2 min ago</span>
+        </div>
 
-          <path class="pulse-line pulse-healthy-2 pulse-draw"
-            d="M0,200 C 40,195 60,205 90,195 C 130,185 150,205 190,195 C 230,185 250,200 290,192 C 330,184 350,198 390,190 C 430,182 450,194 520,188" />
+        <ul class="dash-list">
+          <li class="dash-row">
+            <span class="dash-name">Northwind Labs</span>
+            <span class="dash-bar"><span class="dash-bar-fill risk" style="width:28%"></span></span>
+            <span class="dash-score risk">28</span>
+            <span class="dash-badge risk">At risk</span>
+          </li>
+          <li class="dash-row">
+            <span class="dash-name">Fenwick &amp; Co</span>
+            <span class="dash-bar"><span class="dash-bar-fill risk" style="width:41%"></span></span>
+            <span class="dash-score risk">41</span>
+            <span class="dash-badge risk">At risk</span>
+          </li>
+          <li class="dash-row">
+            <span class="dash-name">Attic Studio</span>
+            <span class="dash-bar"><span class="dash-bar-fill watch" style="width:57%"></span></span>
+            <span class="dash-score watch">57</span>
+            <span class="dash-badge watch">Watch</span>
+          </li>
+          <li class="dash-row">
+            <span class="dash-name">Bramwell Retail</span>
+            <span class="dash-bar"><span class="dash-bar-fill healthy" style="width:88%"></span></span>
+            <span class="dash-score healthy">88</span>
+            <span class="dash-badge healthy">Healthy</span>
+          </li>
+        </ul>
 
-          <path class="pulse-line pulse-risk pulse-draw"
-            d="M0,60 C 50,58 70,62 100,65 C 150,70 170,75 210,100 C 250,125 270,158 310,190 C 350,222 370,236 410,242 C 440,246 460,244 520,246" />
-
-          <circle cx="410" cy="242" r="5" class="risk-marker" />
-          <text x="422" y="238" class="risk-label">at risk · 28</text>
-        </svg>
         <div class="monitor-foot">
-          <span>3 accounts flagged today</span>
-          <span class="flag">view report →</span>
+          <span>2 accounts need attention this week</span>
+          <span class="flag">view all →</span>
         </div>
       </div>
     </div>
