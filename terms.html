@@ -3,11 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service — ChurnPit</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>Terms of Service: ChurnPit</title>
+<meta name="description" content="ChurnPit's terms of service: the rules for using our website and product.">
+<link rel="canonical" href="https://churnpit.orviton.com/terms.html">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+  .legal-content { padding: 72px 0 96px; max-width: 760px; margin: 0 auto; }
+  .legal-content h1 { font-size: 2rem; margin-bottom: 8px; }
+  .legal-content .updated { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 40px; }
+  .legal-content h2 { font-size: 1.25rem; margin-top: 36px; margin-bottom: 12px; }
+  .legal-content p, .legal-content li { color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 12px; }
+  .legal-content ul { padding-left: 20px; margin-bottom: 16px; }
+  .legal-content a { color: var(--healthy); text-decoration: underline; }
+</style>
 </head>
 <body>
 
@@ -16,40 +26,44 @@
     <a href="index.html"><span class="logo">ChurnPit</span></a>
     <nav class="header-nav">
       <a href="index.html#features">Features</a>
-      <a href="index.html#how-it-works">How it works</a>
       <a href="index.html#pricing">Pricing</a>
-      <a href="index.html#request">Request a feature</a>
     </nav>
-    <a href="index.html#cta" class="btn btn-primary">Get early access</a>
+    <a href="index.html#cta" class="btn btn-ghost">Get early access</a>
   </div>
 </header>
 
-<main>
-  <section class="legal-page">
-    <div class="wrap legal-wrap">
-      <h1>Terms of Service</h1>
-      <p class="legal-updated">Last updated: [add date before publishing]</p>
+<main class="wrap legal-content">
+  <h1>Terms of Service</h1>
+  <p class="updated">Last updated: January 2026</p>
 
-      <div class="legal-placeholder-note">
-        <strong>Before this goes live:</strong> this is placeholder text, not a real terms of service. Fill in your real company name, jurisdiction, and actual billing terms below, and have a lawyer review it before you take real payments.
-      </div>
+  <p>These terms govern your use of the ChurnPit website and product. By signing up for early access or using ChurnPit, you agree to these terms.</p>
 
-      <h2>Using ChurnPit</h2>
-      <p>[Describe what people are agreeing to by signing up: an early access product, current limitations, that features may change before general availability.]</p>
+  <h2>1. Early access and beta status</h2>
+  <p>ChurnPit is currently in an early access phase. Features, pricing, and availability may change as we develop the product. Founding member pricing offered during early access is honored for the life of your subscription, provided your account remains active and in good standing.</p>
 
-      <h2>Billing and founding member pricing</h2>
-      <p>[Spell out exactly what the 50% off, locked-in-for-life offer means: whether it's limited to the first 50 signups by date or by some other rule, whether it survives a plan change or a lapse in billing, and what happens if someone cancels and later resubscribes.]</p>
+  <h2>2. Using ChurnPit</h2>
+  <p>You agree to use ChurnPit only for lawful purposes and in accordance with these terms. You are responsible for the accuracy of the billing and usage data you connect, and for maintaining the security of your account credentials.</p>
 
-      <h2>Cancellation</h2>
-      <p>[State how someone cancels and what happens to their data afterward.]</p>
+  <h2>3. Your data and integrations</h2>
+  <p>When you connect Stripe, a usage tracking snippet, or a webhook, you are granting ChurnPit permission to read the relevant data solely to calculate and deliver customer health scores and alerts to you. You retain ownership of your data at all times.</p>
 
-      <h2>Limitation of liability</h2>
-      <p>[This section carries real legal weight — have a lawyer draft or review it rather than relying on a template.]</p>
+  <h2>4. Custom domain and email sending</h2>
+  <p>If you configure ChurnPit to send alerts from your own domain or SMTP server, you are responsible for ensuring you have the right to send email from that domain and for complying with applicable anti-spam laws.</p>
 
-      <h2>Contact</h2>
-      <p>Reach us at <a href="mailto:support@orviton.com">support@orviton.com</a>.</p>
-    </div>
-  </section>
+  <h2>5. Payment and cancellation</h2>
+  <p>Subscriptions are billed on the plan and cycle you select at signup. You may cancel at any time; cancellation takes effect at the end of your current billing period. We do not provide refunds for partial billing periods, except where required by law.</p>
+
+  <h2>6. Acceptable use</h2>
+  <p>You may not use ChurnPit to store or process data you do not have the legal right to use, to attempt to disrupt or reverse-engineer the service, or to resell access to ChurnPit without our written permission.</p>
+
+  <h2>7. Disclaimer and limitation of liability</h2>
+  <p>ChurnPit is provided "as is." Health scores and risk alerts are decision-support tools based on the data you connect, and are not a guarantee that any customer will or will not churn. To the maximum extent permitted by law, ChurnPit is not liable for indirect, incidental, or consequential damages arising from use of the service.</p>
+
+  <h2>8. Changes to these terms</h2>
+  <p>We may update these terms from time to time. Continued use of ChurnPit after changes take effect constitutes acceptance of the revised terms.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions about these terms can be sent to <a href="mailto:legal@orviton.com">legal@orviton.com</a>.</p>
 </main>
 
 <footer class="site-footer">
@@ -61,7 +75,7 @@
     <div class="footer-links">
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
-      <a href="mailto:support@orviton.com">support@orviton.com</a>
+      <a href="mailto:legal@orviton.com">Contact</a>
     </div>
     <p class="footer-copy">&copy; 2026 ChurnPit. All rights reserved.</p>
   </div>
